@@ -114,7 +114,7 @@ jobs:
       # Node twin of the loopback server, with nothing but remote keys.
       - name: Install Chromium for the remote-control suites
         shell: bash
-        run: pnpm exec playwright install --with-deps chromium
+        run: pnpm exec playwright install chromium
 
       - name: Remote-control suites (tv.js against the real PWA)
         shell: bash
